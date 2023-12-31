@@ -16,15 +16,16 @@ class OnBoardingDotNavigation extends StatelessWidget {
     final controller = OnBoardingController.instanse;
     final dark = EHelper.isDarkMode(context);
     return Positioned(
-      bottom: EdeviceUtils.getBottomNavbarHeight() + 25,
-      left: ESizes.defaultSpace,
-      child: SmoothPageIndicator(
-        count: 3,
-        controller: controller.pageController,
-        onDotClicked: controller.dotNavigationClick,
-        effect: ExpandingDotsEffect(
-        activeDotColor: dark? Ecolors.ligth : Ecolors.black,
-        dotHeight: 6,
-      ),));
+        bottom: EdeviceUtils.getBottomNavbarHeight() + 25,
+        left: ESizes.defaultSpace,
+        child: SmoothPageIndicator(
+          count: 3,
+          controller: controller.pageController,
+          onDotClicked: controller.dotNavigationClick,
+          effect: ExpandingDotsEffect(
+            activeDotColor: dark ? Ecolors.ligth : Ecolors.black,
+            dotHeight: 6,
+          ),
+        ));
   }
 }

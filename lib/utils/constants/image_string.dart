@@ -1,4 +1,4 @@
-class EImage{
+class EImage {
   EImage._();
 
   //app logos
@@ -6,11 +6,14 @@ class EImage{
   static const String appLogoDark = "assets/logos/logo_dark.png";
 
   //social logo
-  static const String googleLogo = "assest/logos/google.png";
-  static const String facebookLogo = "assest/logos/facebook.png";
+  static const String googleLogo = "assets/logos/google.png";
+  static const String facebookLogo = "assets/logos/facebook.png";
 
   //onboarding images
-  static const String onboardingImage1 = "assets/images/on_board/on_board_1.gif";
-  static const String onboardingImage2 = "assets/images/on_board/on_board_2.gif";
-  static const String onboardingImage3 = "assets/images/on_board/on_board_3.gif";
+  static const String onboardingImage1 =
+      "assets/images/on_board/on_board_1.gif";
+  static const String onboardingImage2 =
+      "assets/images/on_board/on_board_2.gif";
+  static const String onboardingImage3 =
+      "assets/images/on_board/on_board_3.gif";
 }
