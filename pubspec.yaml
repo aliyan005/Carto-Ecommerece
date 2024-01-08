@@ -40,6 +40,7 @@ flutter:
     - assets/logos/
     - assets/images/
     - assets/images/on_board/
+    - assets/images/animations/
 
 #fonts
   fonts:
