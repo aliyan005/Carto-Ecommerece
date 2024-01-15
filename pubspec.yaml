@@ -36,7 +36,7 @@ flutter:
 #assets
   assets:
     # - assets/images/
-    - assets/icons/
+    # - assets/icons/
     - assets/logos/
     - assets/images/
     - assets/images/on_board/
