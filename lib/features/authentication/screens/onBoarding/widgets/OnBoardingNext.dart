@@ -15,11 +15,13 @@ class OnBoardNext extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = EHelper.isDarkMode(context);
     return Positioned(
-      right: ESizes.defaultSpace,
-      bottom: EdeviceUtils.getBottomNavbarHeight(),
-      child: ElevatedButton(
-        style:  ElevatedButton.styleFrom(shape: const CircleBorder(), backgroundColor: dark ? Ecolors.primary : Ecolors.black),
-        onPressed: ()=> OnBoardingController.instanse.nextPage(), child: const Icon(Iconsax.arrow_right_3)));
+        right: ESizes.defaultSpace,
+        bottom: EdeviceUtils.getBottomNavbarHeight(),
+        child: ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                shape: const CircleBorder(),
+                backgroundColor: dark ? Ecolors.primary : Ecolors.black),
+            onPressed: () => OnBoardingController.instanse.nextPage(),
+            child: const Icon(Iconsax.arrow_right_3)));
   }
 }
-
