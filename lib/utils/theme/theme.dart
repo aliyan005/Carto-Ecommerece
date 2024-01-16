@@ -1,3 +1,4 @@
+import 'package:ecommerece/utils/constants/colors.dart';
 import 'package:ecommerece/utils/theme/customtheme/elevated_button_theme.dart';
 import 'package:ecommerece/utils/theme/customtheme/appbartheme.dart';
 import 'package:ecommerece/utils/theme/customtheme/bottomsheet_theme.dart';
@@ -18,7 +19,7 @@ class Eapptheme{
     fontFamily: 'poppins',
     brightness: Brightness.light,
     scaffoldBackgroundColor: const Color(0xFFFFFFFF),
-    primaryColor: Colors.blue[300],
+    primaryColor: Ecolors.primary,
     textTheme: EtextTheme.lightTextTheme,
     chipTheme: EchipTheme.lightChipTheme,
     appBarTheme: EappbarTheme.ligthAppBarTheme,
@@ -36,7 +37,7 @@ class Eapptheme{
     fontFamily: 'poppins',
     brightness: Brightness.light,
     scaffoldBackgroundColor: const Color(0xFF222222),
-    primaryColor: Colors.blue[300],
+    primaryColor: Ecolors.primary,
     textTheme: EtextTheme.darkTextTheme,
     chipTheme: EchipTheme.darkChipTheme,
     appBarTheme: EappbarTheme.darkAppBarTheme,

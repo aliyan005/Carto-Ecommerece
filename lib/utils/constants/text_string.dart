@@ -49,6 +49,8 @@ class EText {
   static const String forgotPassword = "Forgot Password";
   static const String signIn = "Sign In";
   static const String and = "and";
+  static const String eSubmit = "Submit";
+  static const String eDone = "done";
   static const String eContinue = "Continue";
   static const String createAccount = "Create account";
   static const String orSignWith = "or Sign in with";

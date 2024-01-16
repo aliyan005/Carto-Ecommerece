@@ -1,3 +1,4 @@
+import 'package:ecommerece/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class EoutlinedButtonTheme{
@@ -6,9 +7,9 @@ class EoutlinedButtonTheme{
   static final lightOutlinedBorderTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       elevation: 0,
-      foregroundColor: Colors.black,
-      side: const BorderSide(color: Colors.blue),
-      textStyle: const TextStyle(fontSize: 16,color: Colors.black,fontWeight: FontWeight.w600),
+      foregroundColor: Ecolors.primary,
+      side: const BorderSide(color: Ecolors.primary),
+      textStyle: const TextStyle(fontSize: 16,color: Ecolors.primary,fontWeight: FontWeight.w600),
       padding: const EdgeInsets.symmetric(vertical: 16,horizontal: 20),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14))
     )
@@ -18,7 +19,7 @@ class EoutlinedButtonTheme{
     style: OutlinedButton.styleFrom(
       elevation: 0,
       foregroundColor: Colors.white,
-      side: const BorderSide(color: Colors.blue),
+      side: const BorderSide(color: Ecolors.primary),
       textStyle: const TextStyle(fontSize: 16,color: Colors.white,fontWeight: FontWeight.w600),
       padding: const EdgeInsets.symmetric(vertical: 16,horizontal: 20),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14))
