@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:ecommerece/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -7,9 +7,14 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.red,
-      body: Container(
-        child: const Text("HOME SCREEN"),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            EPrimaryHeaderContent(
+              child: Container(),
+            )
+          ],
+        ),
       ),
     );
   }
