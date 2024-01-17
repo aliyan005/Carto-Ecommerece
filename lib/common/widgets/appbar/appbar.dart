@@ -1,13 +1,26 @@
 import 'package:ecommerece/utils/constants/sizes.dart';
 import 'package:ecommerece/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:iconsax/iconsax.dart';
 
 class EAppBar extends StatelessWidget implements PreferredSizeWidget{
-  const EAppBar({super.key});
+  const EAppBar({super.key, this.title, required this.showBackArrow, this.leadingIcon, this.actions, this.leadingOnPressed});
+
+  final Widget? title;
+  final bool showBackArrow;
+  final IconData? leadingIcon;
+  final List<Widget>? actions;
+  final VoidCallback? leadingOnPressed;
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(padding: EdgeInsets.symmetric(horizontal: ESizes.md));
+    return Padding(padding: const EdgeInsets.symmetric(horizontal: ESizes.md),
+      child: AppBar(
+        automaticallyImplyLeading: false,
+        leading: showBackArrow ? IconButton(onPressed: () => Get.back(), icon: const Icon(Iconsax.arrow_left)) : IconButton(onPressed: () => Get.back(), icon: const Icon(Iconsax.arrow_left)),
+      ),
+    );
   }
   
   @override
