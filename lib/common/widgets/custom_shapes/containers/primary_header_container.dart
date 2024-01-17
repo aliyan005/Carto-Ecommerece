@@ -5,7 +5,8 @@ import 'package:flutter/material.dart';
 
 class EPrimaryHeaderContent extends StatelessWidget {
   const EPrimaryHeaderContent({
-    super.key, required this.child,
+    super.key,
+    required this.child,
   });
 
   final Widget child;
@@ -34,6 +35,7 @@ class EPrimaryHeaderContent extends StatelessWidget {
                   color: Ecolors.textWhite.withOpacity(0.1),
                 ),
               ),
+              child,
             ],
           ),
         ),
