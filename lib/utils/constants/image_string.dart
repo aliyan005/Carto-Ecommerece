@@ -32,13 +32,23 @@ class EImage {
       "assets/images/animations/carto-travelling-backpak.gif";
 
   // categories icons
-  static const String sportsIcon = "assets/icons/categories/icons8-bowling-64.png";
-  static const String clothIcon = "assets/icons/categories/icons8-tailors-dummy-64.png";
+  static const String sportsIcon =
+      "assets/icons/categories/icons8-bowling-64.png";
+  static const String clothIcon =
+      "assets/icons/categories/icons8-tailors-dummy-64.png";
   static const String shoeIcon = "assets/icons/categories/icons8-shoes-64.png";
-  static const String cosmeticIcon = "assets/icons/categories/icons8-cosmetics-64.png";
-  static const String animalIcon = "assets/icons/categories/icons8-dog-heart-64.png";
-  static const String toyIcon = "assets/icons/categories/icons8-wooden-toy-car-64.png";
-  static const String furnitureIcon = "assets/icons/categories/icons8-dining-chair-64.png";
-  static const String jeweleryIcon = "assets/icons/categories/icons8-sparkling-diamond-64.png";
-  static const String electronicIcon = "assets/icons/categories/icons8-smartphone-64.png";
+  static const String cosmeticIcon =
+      "assets/icons/categories/icons8-cosmetics-64.png";
+  static const String animalIcon =
+      "assets/icons/categories/icons8-dog-heart-64.png";
+  static const String toyIcon =
+      "assets/icons/categories/icons8-wooden-toy-car-64.png";
+  static const String furnitureIcon =
+      "assets/icons/categories/icons8-dining-chair-64.png";
+  static const String jeweleryIcon =
+      "assets/icons/categories/icons8-sparkling-diamond-64.png";
+  static const String electronicIcon =
+      "assets/icons/categories/icons8-smartphone-64.png";
+  static const String uniformIcon =
+      "assets/icons/categories/icons8-school-uniform-64.png";
 }

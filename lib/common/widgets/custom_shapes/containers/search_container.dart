@@ -12,45 +12,50 @@ class ESearchContainer extends StatelessWidget {
     this.icon = Iconsax.search_normal,
     this.showBackground = true,
     this.showBorder = true,
+    this.onTap,
   });
 
   final String text;
   final IconData? icon;
+  final VoidCallback? onTap;
   final bool showBackground, showBorder;
 
   @override
   Widget build(BuildContext context) {
     final dark = EHelper.isDarkMode(context);
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: ESizes.defaultSpace),
-      child: Container(
-        width: EdeviceUtils.getScreenWidth(),
-        padding: const EdgeInsets.all(ESizes.md),
-        decoration: BoxDecoration(
-            color: showBackground
-                ? dark
-                    ? Ecolors.dark
-                    : Ecolors.lightGrey
-                : Colors.transparent,
-            borderRadius: BorderRadius.circular(ESizes.cardRadiusLg),
-            border: showBorder ? Border.all(color: Ecolors.grey) : null),
-        child: Row(
-          children: [
-            Icon(
-              icon,
-              color: Ecolors.grey,
-            ),
-            const SizedBox(
-              width: ESizes.spaceBtwItem,
-            ),
-            Text(
-              text,
-              style: Theme.of(context)
-                  .textTheme
-                  .bodySmall!
-                  .apply(color: Ecolors.grey),
-            )
-          ],
+    return GestureDetector(
+      onTap: onTap,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: ESizes.defaultSpace),
+        child: Container(
+          width: EdeviceUtils.getScreenWidth(),
+          padding: const EdgeInsets.all(ESizes.md),
+          decoration: BoxDecoration(
+              color: showBackground
+                  ? dark
+                      ? Ecolors.dark
+                      : Ecolors.lightGrey
+                  : Colors.transparent,
+              borderRadius: BorderRadius.circular(ESizes.cardRadiusLg),
+              border: showBorder ? Border.all(color: Ecolors.grey) : null),
+          child: Row(
+            children: [
+              Icon(
+                icon,
+                color: Ecolors.grey,
+              ),
+              const SizedBox(
+                width: ESizes.spaceBtwItem,
+              ),
+              Text(
+                text,
+                style: Theme.of(context)
+                    .textTheme
+                    .bodySmall!
+                    .apply(color: Ecolors.grey),
+              )
+            ],
+          ),
         ),
       ),
     );
