@@ -31,12 +31,13 @@ class HomeScreen extends StatelessWidget {
                     height: ESizes.spaceBtwSection,
                   ),
 
-                  //categories
+                  //categories section
 
                   Padding(
                     padding: EdgeInsets.only(left: ESizes.defaultSpace),
                     child: Column(
                       children: [
+                        //categories heading
                         ESectionHeading(
                           text: 'Popular Categories',
                           showButton: false,
@@ -44,6 +45,8 @@ class HomeScreen extends StatelessWidget {
                         SizedBox(
                           height: ESizes.spaceBtwItem,
                         ),
+                        
+                        //categories heading
                       ],
                     ),
                   )
