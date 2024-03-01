@@ -1,6 +1,5 @@
 import 'package:ecommerece/features/shop/screens/home/home.dart';
 import 'package:ecommerece/utils/constants/colors.dart';
-import 'package:ecommerece/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
