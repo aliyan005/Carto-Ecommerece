@@ -13,12 +13,12 @@ class EHomeCategory extends StatelessWidget {
       height: 80,
       child: ListView.builder(
         shrinkWrap: true,
-        itemCount: 9,
+        itemCount: 6,
         scrollDirection: Axis.horizontal,
         itemBuilder: (_, index) {
           return EvertscrollCat(
             image: EImage.shoeIcon,
-            title: 'Shoes',
+            title: 'Footware',
             onTap: () {},
           );
         },

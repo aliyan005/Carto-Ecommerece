@@ -10,6 +10,7 @@ class CustomShape extends StatelessWidget {
     this.padding = 0,
     this.child,
     this.color = Ecolors.white,
+    this.margin,
   });
 
   final double? width;
@@ -17,6 +18,7 @@ class CustomShape extends StatelessWidget {
   final double radius;
   final double padding;
   final Widget? child;
+  final EdgeInsets? margin;
   final Color color;
 
   @override
@@ -24,10 +26,11 @@ class CustomShape extends StatelessWidget {
     return Container(
       width: width,
       height: height,
+      margin: margin,
       padding: EdgeInsets.all(padding),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius),
-        color: Ecolors.textWhite.withOpacity(0.1),
+        color: color,
       ),
       child: child,
     );

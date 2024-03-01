@@ -12,20 +12,20 @@ class BottomNavigation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller = Get.put(NavigationController());
-    final dark = EHelper.isDarkMode(context);
+    // final dark = EHelper.isDarkMode(context);
 
     return Scaffold(
       bottomNavigationBar: Obx(
         () => Container(
-          color: dark ? Ecolors.white : Ecolors.white,
+          color: Ecolors.borderPrimary,
           child: Padding(
-            padding: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(5),
             child: GNav(
               gap: 4,
               tabBorderRadius: 30,
               tabActiveBorder: Border.all(color: Colors.black, width: 1),
               padding: const EdgeInsets.all(16),
-              backgroundColor: dark ? Ecolors.black : Ecolors.white,
+              backgroundColor: Ecolors.borderPrimary,
               selectedIndex: controller.selectedIndex.value,
               onTabChange: (index) => controller.selectedIndex.value = index,
               tabs: const [
