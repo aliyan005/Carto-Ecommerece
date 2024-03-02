@@ -7,8 +7,8 @@ import 'package:ecommerece/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class signUpScreen extends StatelessWidget {
-  const signUpScreen({super.key});
+class SignUpScreen extends StatelessWidget {
+  const SignUpScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -28,19 +28,19 @@ class signUpScreen extends StatelessWidget {
               const SizedBox(
                 height: ESizes.spaceBtwSection,
               ),
-              signupForm(dark: dark),
+              SignupForm(dark: dark),
               const SizedBox(
                 height: ESizes.spaceBtwSection,
               ),
               //divider
-              formDivider(
+              FormDivider(
                   dark: dark, dividertext: EText.orSignUpWith.capitalize!),
               const SizedBox(
                 height: ESizes.spaceBtwSection,
               ),
 
               //footer
-              const socialButtons(),
+              const SocialButtons(),
               const SizedBox(
                 height: ESizes.spaceBtwSection,
               ),

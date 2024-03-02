@@ -1,13 +1,13 @@
 import 'package:ecommerece/features/authentication/screens/signup/verify_email.dart';
-import 'package:ecommerece/features/authentication/screens/signup/widgets/T&C.dart';
+import 'package:ecommerece/features/authentication/screens/signup/widgets/t_and_c.dart';
 import 'package:ecommerece/utils/constants/sizes.dart';
 import 'package:ecommerece/utils/constants/text_string.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
-class signupForm extends StatelessWidget {
-  const signupForm({
+class SignupForm extends StatelessWidget {
+  const SignupForm({
     super.key,
     required this.dark,
   });
@@ -26,8 +26,7 @@ class signupForm extends StatelessWidget {
               child: TextFormField(
                 expands: false,
                 decoration: const InputDecoration(
-                    labelText: EText.firstName,
-                    prefixIcon: Icon(Iconsax.user)),
+                    labelText: EText.firstName, prefixIcon: Icon(Iconsax.user)),
               ),
             ),
             const SizedBox(
@@ -38,8 +37,7 @@ class signupForm extends StatelessWidget {
               child: TextFormField(
                 expands: false,
                 decoration: const InputDecoration(
-                    labelText: EText.lastName,
-                    prefixIcon: Icon(Iconsax.user)),
+                    labelText: EText.lastName, prefixIcon: Icon(Iconsax.user)),
               ),
             ),
           ],
@@ -47,40 +45,37 @@ class signupForm extends StatelessWidget {
         const SizedBox(
           height: ESizes.spaceBtwInputField,
         ),
-    
+
         //username
         TextFormField(
           expands: false,
           decoration: const InputDecoration(
-              labelText: EText.username,
-              prefixIcon: Icon(Iconsax.user_edit)),
+              labelText: EText.username, prefixIcon: Icon(Iconsax.user_edit)),
         ),
         const SizedBox(
           height: ESizes.spaceBtwInputField,
         ),
-    
+
         //email
         TextFormField(
           expands: false,
           decoration: const InputDecoration(
-              labelText: EText.email,
-              prefixIcon: Icon(Iconsax.direct)),
+              labelText: EText.email, prefixIcon: Icon(Iconsax.direct)),
         ),
         const SizedBox(
           height: ESizes.spaceBtwInputField,
         ),
-    
+
         //phone number
         TextFormField(
           expands: false,
           decoration: const InputDecoration(
-              labelText: EText.phoneNo,
-              prefixIcon: Icon(Iconsax.call)),
+              labelText: EText.phoneNo, prefixIcon: Icon(Iconsax.call)),
         ),
         const SizedBox(
           height: ESizes.spaceBtwInputField,
         ),
-    
+
         //password
         TextFormField(
           expands: false,
@@ -92,20 +87,19 @@ class signupForm extends StatelessWidget {
         const SizedBox(
           height: ESizes.spaceBtwInputField,
         ),
-    
+
         TandC(dark: dark),
         const SizedBox(
           height: ESizes.spaceBtwSection,
         ),
-    
+
         SizedBox(
           width: double.infinity,
           child: ElevatedButton(
-              onPressed: () => Get.to(() => const verifyEmailScreen()),
+              onPressed: () => Get.to(() => const VerifyEmailScreen()),
               child: const Text(EText.createAccount)),
         )
       ],
     ));
   }
 }
-

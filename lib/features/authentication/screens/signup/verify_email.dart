@@ -8,8 +8,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class verifyEmailScreen extends StatelessWidget {
-  const verifyEmailScreen({super.key});
+class VerifyEmailScreen extends StatelessWidget {
+  const VerifyEmailScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class verifyEmailScreen extends StatelessWidget {
         automaticallyImplyLeading: false,
         actions: [
           IconButton(
-              onPressed: () => Get.offAll(() => const loginScreen()),
+              onPressed: () => Get.offAll(() => const LoginScreen()),
               icon: const Icon(CupertinoIcons.clear))
         ],
       ),
@@ -71,7 +71,7 @@ class verifyEmailScreen extends StatelessWidget {
                             image: EImage.staticSuccessIllstration,
                             title: EText.successMessageSubTitle,
                             subtitle: EText.successMessage,
-                            onPressed: () => Get.to(() => const loginScreen()),
+                            onPressed: () => Get.to(() => const LoginScreen()),
                           ),
                         ),
                     child: const Text(EText.eContinue)),

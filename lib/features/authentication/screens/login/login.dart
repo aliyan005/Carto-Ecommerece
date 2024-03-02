@@ -9,8 +9,8 @@ import 'package:ecommerece/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class loginScreen extends StatelessWidget {
-  const loginScreen({super.key});
+class LoginScreen extends StatelessWidget {
+  const LoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,11 +22,11 @@ class loginScreen extends StatelessWidget {
           child: Column(
             children: [
               //header
-              loginHeader(dark: dark),
+              LoginHeader(dark: dark),
               //form
-              loginForm(),
+              const LoginForm(),
               //divider
-              formDivider(
+              FormDivider(
                 dark: dark,
                 dividertext: EText.orSignWith.capitalize!,
               ),
@@ -36,7 +36,7 @@ class loginScreen extends StatelessWidget {
               ),
 
               //footer
-              socialButtons()
+              const SocialButtons()
             ],
           ),
         ),

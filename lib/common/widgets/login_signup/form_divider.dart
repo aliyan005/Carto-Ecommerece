@@ -1,12 +1,8 @@
 import 'package:ecommerece/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
-class formDivider extends StatelessWidget {
-  const formDivider({
-    super.key,
-    required this.dark,
-    required this.dividertext
-  });
+class FormDivider extends StatelessWidget {
+  const FormDivider({super.key, required this.dark, required this.dividertext});
 
   final bool dark;
   final String dividertext;

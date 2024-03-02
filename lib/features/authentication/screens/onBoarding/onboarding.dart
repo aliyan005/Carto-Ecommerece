@@ -1,8 +1,8 @@
 import 'package:ecommerece/features/authentication/controllers/onboarding/onboarding_controller.dart';
-import 'package:ecommerece/features/authentication/screens/onBoarding/widgets/OnBoardDots.dart';
-import 'package:ecommerece/features/authentication/screens/onBoarding/widgets/OnBoardingNext.dart';
-import 'package:ecommerece/features/authentication/screens/onBoarding/widgets/OnBoarding_page.dart';
-import 'package:ecommerece/features/authentication/screens/onBoarding/widgets/onBoarding_Skip.dart';
+import 'package:ecommerece/features/authentication/screens/onBoarding/widgets/on_board_dots.dart';
+import 'package:ecommerece/features/authentication/screens/onBoarding/widgets/on_boarding_next.dart';
+import 'package:ecommerece/features/authentication/screens/onBoarding/widgets/on_boarding_page.dart';
+import 'package:ecommerece/features/authentication/screens/onBoarding/widgets/onboarding_skip.dart';
 import 'package:ecommerece/utils/constants/image_string.dart';
 import 'package:ecommerece/utils/constants/text_string.dart';
 import 'package:flutter/material.dart';

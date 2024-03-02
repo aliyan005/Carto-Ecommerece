@@ -3,8 +3,8 @@ import 'package:ecommerece/utils/constants/sizes.dart';
 import 'package:ecommerece/utils/constants/text_string.dart';
 import 'package:flutter/material.dart';
 
-class loginHeader extends StatelessWidget {
-  const loginHeader({
+class LoginHeader extends StatelessWidget {
+  const LoginHeader({
     super.key,
     required this.dark,
   });
@@ -18,8 +18,7 @@ class loginHeader extends StatelessWidget {
       children: [
         Image(
             height: 150,
-            image: AssetImage(
-                dark ? EImage.appLogoLight : EImage.appLogoDark)),
+            image: AssetImage(dark ? EImage.appLogoLight : EImage.appLogoDark)),
         Text(EText.loginTitle,
             style: Theme.of(context).textTheme.headlineMedium),
         const SizedBox(
@@ -31,4 +30,3 @@ class loginHeader extends StatelessWidget {
     );
   }
 }
-

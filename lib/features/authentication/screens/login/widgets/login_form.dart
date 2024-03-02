@@ -7,8 +7,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
-class loginForm extends StatelessWidget {
-  const loginForm({
+class LoginForm extends StatelessWidget {
+  const LoginForm({
     super.key,
   });
 
@@ -44,7 +44,7 @@ class loginForm extends StatelessWidget {
                 //remember me
                 Row(
                   children: [
-                    Checkbox(value: true, onChanged: (Value) {}),
+                    Checkbox(value: true, onChanged: (value) {}),
                     const Text(
                       EText.rememberMe,
                     ),
@@ -70,7 +70,7 @@ class loginForm extends StatelessWidget {
             SizedBox(
                 width: double.infinity,
                 child: OutlinedButton(
-                    onPressed: () => Get.to(const signUpScreen()),
+                    onPressed: () => Get.to(const SignUpScreen()),
                     child: const Text(EText.createAccount))),
           ],
         ),
