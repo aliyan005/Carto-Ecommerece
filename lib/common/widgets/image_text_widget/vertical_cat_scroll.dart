@@ -40,7 +40,7 @@ class EvertscrollCat extends StatelessWidget {
                 child: Image(
                   image: AssetImage(image),
                   fit: BoxFit.cover,
-                  color: dark ? Ecolors.ligth : Ecolors.black,
+                  color: dark ? Ecolors.light : Ecolors.black,
                 ),
               ),
             ),

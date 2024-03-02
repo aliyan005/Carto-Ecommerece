@@ -1,5 +1,6 @@
 import 'package:ecommerece/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:ecommerece/common/widgets/custom_shapes/containers/search_container.dart';
+import 'package:ecommerece/common/widgets/products/cards/product_card_vertical.dart';
 import 'package:ecommerece/common/widgets/texts/section_heading.dart';
 import 'package:ecommerece/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:ecommerece/features/shop/screens/home/widgets/home_category.dart';
@@ -61,11 +62,16 @@ class HomeScreen extends StatelessWidget {
             //body starts
             Padding(
               padding: EdgeInsets.all(ESizes.defaultSpace),
-              child: EPromoSlider(
-                banners: [
-                  EImage.promoBanner1,
-                  EImage.promoBanner2,
-                  EImage.promoBanner3
+              child: Column(
+                children: [
+                  EPromoSlider(
+                    banners: [
+                      EImage.promoBanner1,
+                      EImage.promoBanner2,
+                      EImage.promoBanner3
+                    ],
+                  ),
+                  EProductCardVertical()
                 ],
               ),
             ),
