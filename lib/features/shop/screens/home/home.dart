@@ -71,6 +71,9 @@ class HomeScreen extends StatelessWidget {
                       EImage.promoBanner3
                     ],
                   ),
+                  SizedBox(
+                    height: ESizes.spaceBtwSection,
+                  ),
                   EProductCardVertical()
                 ],
               ),

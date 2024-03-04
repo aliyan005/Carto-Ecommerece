@@ -4,19 +4,19 @@ import 'package:flutter/material.dart';
 class CustomShape extends StatelessWidget {
   const CustomShape({
     super.key,
-    this.width = 400,
-    this.height = 400,
+    this.width = 0,
+    this.height = 0,
     this.radius = 400,
-    this.padding = 0,
+    this.padding,
     this.child,
-    this.color = Ecolors.white,
+    this.color = Ecolors.darkContainer,
     this.margin,
   });
 
   final double? width;
   final double? height;
   final double radius;
-  final double padding;
+  final EdgeInsets? padding;
   final Widget? child;
   final EdgeInsets? margin;
   final Color color;
@@ -27,10 +27,10 @@ class CustomShape extends StatelessWidget {
       width: width,
       height: height,
       margin: margin,
-      padding: EdgeInsets.all(padding),
+      padding: padding,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius),
-        color: color,
+        color: color.withOpacity(0.1),
       ),
       child: child,
     );

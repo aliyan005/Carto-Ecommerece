@@ -26,6 +26,8 @@ class EPrimaryHeaderContent extends StatelessWidget {
                 right: -250,
                 child: CustomShape(
                   color: Ecolors.textWhite.withOpacity(0.1),
+                  width: 400,
+                  height: 400,
                 ),
               ),
               Positioned(
@@ -33,6 +35,8 @@ class EPrimaryHeaderContent extends StatelessWidget {
                 right: -300,
                 child: CustomShape(
                   color: Ecolors.textWhite.withOpacity(0.1),
+                  width: 400,
+                  height: 400,
                 ),
               ),
               child,

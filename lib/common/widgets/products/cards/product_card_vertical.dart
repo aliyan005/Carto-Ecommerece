@@ -12,7 +12,7 @@ class EProductCardVertical extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = EHelper.isDarkMode(context);
 
-    return Container(
+    return Container(     
       width: 180,
       padding: const EdgeInsets.all(1),
       decoration: BoxDecoration(
@@ -23,8 +23,9 @@ class EProductCardVertical extends StatelessWidget {
         children: [
           // section 1 (image, wishlist button, discount badge)
           CustomShape(
-            width: 180,
-            // padding: const EdgeInsets.all(ESizes.sm),
+            height: 180,
+            padding: const EdgeInsets.all(ESizes.sm),
+            radius: 180,
             color: dark ? Ecolors.dark : Ecolors.light,
           )
           // section 2 (prosuct details, add to cart button)
